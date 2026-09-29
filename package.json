@@ -1,0 +1,23 @@
+{
+  "name": "local-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/client.js --bundle --minify --outfile=public/app.js --loader:.woff2=file --loader:.woff=file --loader:.ttf=file --asset-names=fonts/[name]-[hash]",
+    "start": "npm run build && node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@hpcc-js/wasm": "^2.35.3",
+    "@panzoom/panzoom": "^4.6.2",
+    "diff": "^8.0.2",
+    "dompurify": "^3.2.6",
+    "esbuild": "^0.25.5",
+    "express": "^5.1.0",
+    "fuse.js": "^7.1.0",
+    "katex": "^0.16.22",
+    "marked": "^15.0.12",
+    "multer": "^2.0.1"
+  }
+}
