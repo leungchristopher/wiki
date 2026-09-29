@@ -1,0 +1,18 @@
+# Installed dependencies and generated browser bundle
+node_modules/
+public/app.js
+public/app.css
+public/fonts/
+public/*.map
+
+# Local wiki pages, assets, revisions, and deleted pages
+wiki-data/
+
+# Machine-specific configuration and output
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+coverage/
+Test/
